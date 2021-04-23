@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Austyn Course Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href=""/>
-  <script>
-    let date1 = new Date().getFullYear();
-    document.querySelector("#Year").textContent = date1;
-  </script>
+  <script src="index.js"></script>
+  <title>Austyn Course Portal</title>
 </head>
 <body>
   <header>
@@ -23,9 +20,9 @@
       <li>Lesson 04</li>
     </ul>
   <footer>
-    &copy; <span id="Year"></span> | Austyn Horne | Utah |BYUI Online Learning
+    &copy; <span id="currentYear"></span> | Austyn Horne | Utah |BYUI Online Learning
     <p>
-      Last Modified: <span id="Modified"></span>
+      Last Modified: <span id="dateModified"></span>
     </p>
   </footer>
 </body>
