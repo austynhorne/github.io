@@ -1,5 +1,6 @@
-let lastModified = document.lastModified;
-document.querySelector("#dateModified").textContent = lastModified;
+let date = new Date();
+let yr = date.getFullYear();
+document.querySelector('#Year').textContent = yr;
 
-let year = new Date().getFullYear();
-document.querySelector("#currentYear").textContent = year;
+let Time = document.lastModified;
+document.querySelector('#Modified').textContent = Time;
