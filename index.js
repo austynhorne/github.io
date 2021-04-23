@@ -1,3 +1,2 @@
-let date = newDate();
-let YR = date.getFullYear();
-document.querySelector('#Year').textContent = YR;
+let date1 = new Date().getFullYear();
+document.querySelector("#Year").textContent = date1;
