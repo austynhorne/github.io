@@ -30,7 +30,10 @@ footer {
     color: #ECA72C;
 }
 footer a:visited {
-    color: white;
+    color: #ECA72C;
+}
+footer a {
+    color: #ECA72C;
 }
 img {
     max-height: 250px;
