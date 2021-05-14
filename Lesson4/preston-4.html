@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Preston_Small.css"/>
+  <link rel="stylesheet" href="CSS/Preston_Large.css"/>
+  </head>
+  <body>
+      <header>
+        <img src="Images/RainOrShine_Stacked.png">
+        <section class="heading">
+            <h1>Rain Or Shine Weather
+            <div class="motto">Don't Let A Little Rain Ruin Your Day</div>
+            </h1>
+        </section>
+      </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>    
+        </ul>
+    </nav>
+    <h2>
+        Preston Idaho
+    </h2>
+    <div class="holder">
+        Hero w/weather summary
+    </div>
+    <div class="holder">
+        5 day forecast
+    </div>
+    <div class="holder">
+        Article
+    </div>
+    <div class="holder">
+        Contact Information
+    </div>
+    <footer>
+        &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
+        <p id="date">
+          Last Modified: <span id="Modified"></span>
+        </p>
+    </footer>
+  </body>
+  <script src="JS/Preston_JS.js"></script>
+</html>
