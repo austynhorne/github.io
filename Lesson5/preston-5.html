@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="CSS/Preston_Small.css"/>
+  <link rel="stylesheet" href="CSS/Preston_Large.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Preston Page</title>
+</head>
+  <body>
+    <div class="banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+        pavilion.
+    </div>
+      <header>
+        <img class="logo" src="Images/RainOrShine_Stacked.png" alt="logo" >
+        <section class="heading">
+            <h1>Rain Or Shine Weather
+            <div class="motto">Don't Let A Little Rain Ruin Your Day</div>
+            </h1>
+        </section>
+      </header>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>    
+        </ul>
+    </nav>
+    <main>
+    <h2>
+        Preston Idaho
+    </h2>
+    <section class="holderweather">
+        <div class="weathersummary">
+            <table>
+                <caption><strong>Weather Summary</strong></caption>
+                <tr>
+                    <td class="summary1">Currently:</td>
+                    <td class="summary2">Sunny</td>
+                </tr>
+                <tr>
+                    <td class="summary1">Temperature:</td>
+                    <td class="summary2">85&#8457;</td>
+                </tr>
+                <tr>
+                    <td class="summary1">Humidity:</td>
+                    <td class="summary2">20%</td>
+                </tr>
+                <tr>
+                    <td class="summary1">Precipitation:</td>
+                    <td class="summary2">60%</td>
+                </tr>
+                <tr>
+                    <td class="summary1">Wind Speed:</td>
+                    <td class="summary2">6 MPH</td>
+                </tr>
+            </table>
+        </div>
+        <img src="Images/Sunset.jpg" alt="sun" class="sun">
+    </section>
+    <section class="forecastholder">
+        <table id="forecast">
+            <caption id="fiveday">5 day forecast</caption>
+            <tr>
+                <td class="days"><strong>Monday</strong></td>
+                <td class="days"><strong>Tuesday</strong></td>
+                <td class="days"><strong>Wednesday</strong></td>
+                <td class="days"><strong>Thursday</strong></td>
+                <td class="days"><strong>Friday</strong></td>
+            </tr>
+                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"></br>85&#8457</td>
+                <td class="icons"><img src="Images/rainicon.png" alt="Rain Icon"></br>40&#8457</td>
+                <td class="icons"><img src="Images/cloudicon.png" alt="Could Icon"></br>65&#8457</td>
+                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"></br>70&#8457</td>
+                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"></br>80&#8457</td>
+        </table>
+    </section>
+    <section class="Articleholder">
+        <img src="Images/Footballfield.jpg" alt="field" class="field">
+        <h3>Article</h3>
+        <h4>By: <em>John Doe</em></h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+          </p>
+    </section>
+    <section class="contactholder">
+        <img src="Images/Map.PNG" alt="map" class="map">
+            <div id="contact">
+                <h4>Rain Or Shine Weather</h4>
+                <ul id="contactlist">
+                    <li><i class="fa fa-phone"></i>:  888-123-4567</li>
+                    <li><i class="fa fa-envelope-o"></i>:  info@rainorshineweather.com</li>
+                    <li>
+                        <img src="Images/iconfinder_facebook.png" alt="facebook" class="social">
+                        <img src="Images/iconfinder_Instagram.png" alt="Instagram" class="social">
+                        <img src="Images/iconfinder_twitter.png" alt="Twiiter" class="social">
+                    </li>
+                </ul>
+            </div>
+    </section>
+    </main>
+    <footer>
+        &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
+        <p id="date"></p>
+    </footer>
+  </body>
+  <script src="JS/Preston_JS.js"></script>
+</html>
