@@ -30,7 +30,6 @@ month[10] = "November";
 month[11] = "December";
 let FullDate = day[date.getDay()] + ", " + " " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear();
 document.querySelector('#date').innerHTML = FullDate;
-
 if (date.getDay() === 5) {
     document.querySelector('.banner').style.display = 'block';
     }
