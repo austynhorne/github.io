@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/town_small.css">
+  <link rel="stylesheet" href="CSS/town_medium.css">
+  <link rel="stylesheet" href="CSS/town_large.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Image/RainOrShine_Stacked.png" alt="logo" >
+        <section class="heading">
+        <h1>Rain Or Shine Weather<br>
+            <em class="motto">Don't Let A Little Rain Ruin Your Day</em>
+        </h1>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="../Lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../Lesson7/GalleryPage/gallery-7.html">Gallery</a></li>    
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <source media="(max-width: 500px)" srcset="Image\Sunset500px.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Image\Sunset600px.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Image\Sunset900px.jpg" id="sunlarge">
+            <img src="Images/Sunset.jpg" id="sun">
+        </picture>
+        <div class="home-cards"></div>
+        <picture class="field">
+            <source media="(max-width: 600px)" srcset="Image/Footballfield150px.jpg">
+            <source media="(max-width: 2000px)" srcset="Image/Footballfield250px.jpg">
+            <img src="Images/Footballfield.jpg">
+        </picture>
+        <h3>Article</h3>
+        <h4>By: <em>John Doe</em></h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+  
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+            placeat!
+          </p>
+    </main>
+    <footer>
+        &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
+        <p id="date"></p>
+
+    </footer>
+<script src="JS/Towns.js"></script>
+</body>
+</html>

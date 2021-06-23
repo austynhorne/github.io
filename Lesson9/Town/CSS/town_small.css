@@ -1,0 +1,127 @@
+@media only screen and (max-width: 800px) {
+    .home-cards {
+        max-width: 400px;
+        grid-template-columns: 1fr;
+        }
+}
+.home-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    }
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, h1, h2 {
+    font-family: "Cormorant Garamond";
+}
+header {
+    display: flex;
+    background-color: #03045E;
+    align-items: center;
+    padding-left: 10px;
+}
+header .heading {
+    color: white;
+    padding-left: 10px;
+}
+header .motto {
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+header img {
+    height: 60px;
+}
+nav {
+    background-color: #03045E;
+    opacity: 70%;
+    text-align: center;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul.hide {
+    display: none;
+}
+footer {
+    background-color: #03045E;
+    padding: 5px;
+    text-align:center;
+    color: white;
+}
+footer a:visited {
+    color: white;
+}
+footer a {
+    color: white;
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.home-cards section {
+background-color: #90E0EF;
+}
+
+.home-cards h2 {
+color:#03045E;
+font-size: 28px;
+}
+
+.home-cards img {
+width: 100%;
+}
+
+.town-info div {
+color: #0077B6;
+font-size: 12px;
+}
+
+#preston-card {
+order: 1;
+}
+
+#soda-card {
+order: 2;
+}
+
+#fish-card {
+order: 3;
+}
+
+#sunlarge, #sun, #sunmedium, #sunsmall {
+    max-width: 100%;
+}
+
+.field {
+    float: right;
+}

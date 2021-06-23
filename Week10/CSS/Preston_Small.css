@@ -1,0 +1,184 @@
+@media only screen and (max-width: 900px) {
+    body {
+        width: 95%;
+        margin: 0 auto;
+    }
+    /**preston-6**/
+    #forecast {
+        display: none;
+    }
+    .map {
+        display: none;
+    }
+    #contact {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .contactholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #03045E;
+        opacity: 70%;
+    }
+    #contactlist {
+        list-style: none;
+        font-size: 1.25rem;
+        text-align: left;
+        color: white;
+    }
+    .social {
+        width: 25px;
+        justify-content: center;
+    }
+    /**/
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, h1, h2 {
+    font-family: "Cormorant Garamond";
+}
+header {
+    display: flex;
+    background-color: #03045E;
+    align-items: center;
+    padding-left: 10px;
+}
+header .heading {
+    color: white;
+    padding-left: 10px;
+}
+header .motto {
+    font-size: 1rem;
+    margin-top: -1rem;
+}
+header img {
+    height: 60px;
+}
+nav {
+    background-color: #03045E;
+    opacity: 70%;
+    text-align: center;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul.hide {
+    display: none;
+}
+footer {
+    background-color: #03045E;
+    padding: 5px;
+    text-align:center;
+    color: white;
+}
+footer a:visited {
+    color: white;
+}
+footer a {
+    color: white;
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/**preston-6**/
+.banner {
+    background-color: #03045E;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+#prestonheader {
+    text-align: center;
+    font-size: 2rem;
+}
+.weathersummary {
+    position: absolute;
+    background-color: #00B4D8;
+    opacity: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow:  5px 5px  8px black;
+}
+.summary1 {
+    text-align: right;
+}
+.summary2 {
+    text-align: left;
+}
+table {
+    padding: 5px;
+}
+caption {
+    text-align: center;
+}
+#fiveday {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+#forecast {
+    width: 800px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.days, .icons {
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+.days {
+    font-size: 1.25rem;
+    background-color: #0077B6;
+}
+td img {
+    height: 50px;
+}
+.field {
+    float: right;
+}
+.Articleholder {
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+#sunlarge, #sun, #sunmedium, #sunsmall {
+    max-width: 100%;
+}
