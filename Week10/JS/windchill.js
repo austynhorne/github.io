@@ -1,6 +1,6 @@
 let t = document.querySelector('#temp').innerHTML;
 let w = document.querySelector('#wind').innerHTML;
-if ((t <= 50) && (w > 3)) {
+if ((t <= 150) && (w > 0)) {
     let result = chill(t, w)
     document.querySelector('#chill').innerHTML = result.toFixed(0);
 }
