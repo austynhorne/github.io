@@ -26,17 +26,17 @@ fetch(requestURL)
             rainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
 
             if (i == 0) {
-              townImage.setAttribute('src', 'Image/SodaSprings.jpg')
+              townImage.setAttribute('src', 'Images/SodaSprings.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               card.setAttribute('id', 'soda-card')
             } 
             if (i == 2) {
-              townImage.setAttribute('src', 'Image/FishHaven.jpg')
+              townImage.setAttribute('src', 'Images/FishHaven.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               card.setAttribute('id', 'fish-card')
             }
             if (i == 6) {
-              townImage.setAttribute('src', 'Image/Preston.jpg')
+              townImage.setAttribute('src', 'Images/Preston.jpg')
               townImage.setAttribute('alt', 'Image of ' + towns[i].name)
               card.setAttribute('id', 'preston-card')
             }

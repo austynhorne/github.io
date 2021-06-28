@@ -4,13 +4,13 @@
   <meta charset="UTF-8"/>
   <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/town_small.css">
-  <link rel="stylesheet" href="CSS/town_medium.css">
-  <link rel="stylesheet" href="CSS/town_large.css">
+  <link rel="stylesheet" href="CSS/Preston_Small.css">
+  <link rel="stylesheet" href="CSS/Preston_Large.css">
+  <link rel="stylesheet" href="CSS/Preston_Medium.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="Image/RainOrShine_Stacked.png" alt="logo" >
+        <img class="logo" src="Images/RainOrShine_Stacked.png" alt="logo" >
         <section class="heading">
         <h1>Rain Or Shine Weather<br>
             <em class="motto">Don't Let A Little Rain Ruin Your Day</em>
@@ -21,24 +21,24 @@
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="../Lesson6/preston-6.html">Preston</a></li>
+            <li><a href="../../Lesson10/preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="../Lesson7/GalleryPage/gallery-7.html">Gallery</a></li>    
+            <li><a href="../../Lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../../Lesson7/GalleryPage/gallery-7.html">Gallery</a></li>    
         </ul>
     </nav>
     <main>
         <picture>
-            <source media="(max-width: 500px)" srcset="Image\Sunset500px.jpg" id="sunsmall">
-            <source media="(max-width: 600px)" srcset="Image\Sunset600px.jpg" id="sunmedium">
-            <source media="(max-width: 2000px)" srcset="Image\Sunset900px.jpg" id="sunlarge">
+            <source media="(max-width: 500px)" srcset="Images\Sunset500px.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Images\Sunset600px.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Images\Sunset900px.jpg" id="sunlarge">
             <img src="Images/Sunset.jpg" id="sun">
         </picture>
         <div class="home-cards"></div>
         <picture class="field">
-            <source media="(max-width: 600px)" srcset="Image/Footballfield150px.jpg">
-            <source media="(max-width: 2000px)" srcset="Image/Footballfield250px.jpg">
+            <source media="(max-width: 600px)" srcset="Images\Footballfield150px.jpg">
+            <source media="(max-width: 2000px)" srcset="Images\Footballfield250px.jpg">
             <img src="Images/Footballfield.jpg">
         </picture>
         <h3>Article</h3>
@@ -59,11 +59,28 @@
             excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
             placeat!
           </p>
+          <section class="contactholder">
+            <img src="Images/Map.PNG" alt="map" class="map">
+                <div id="contact">
+                    <h4>Rain Or Shine Weather</h4>
+                    <ul id="contactlist">
+                        <li><i class="fa fa-phone"></i>:  888-123-4567</li>
+                        <li><i class="fa fa-envelope-o"></i>:  info@rainorshineweather.com</li>
+                        <li>
+                            <img src="Images/iconfinder_facebook.png" alt="facebook" class="social">
+                            <img src="Images/iconfinder_Instagram.png" alt="Instagram" class="social">
+                            <img src="Images/iconfinder_twitter.png" alt="Twiiter" class="social">
+                        </li>
+                    </ul>
+                </div>
+        </section>
     </main>
     <footer>
-        &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
-        <p id="date"></p>
-
+        <footer>
+            <div id="Visit"></div>
+            &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
+            <p id="date"></p>
+        </footer>
     </footer>
 <script src="JS/Towns.js"></script>
 </body>

@@ -5,8 +5,8 @@
   <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="CSS\Preston_Small.css">
-  <link rel="stylesheet" href="CSS\Preston_Large.css">
+  <link rel="stylesheet" href="CSS/Preston_Small.css">
+  <link rel="stylesheet" href="CSS/Preston_Large.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Preston Page</title>
 </head>
@@ -26,11 +26,11 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="preston-6.html">Preston</a></li>
+            <li><a href="../Lesson9/Town/index.html">Home</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
+            <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
             <li><a href="../Lesson7/GalleryPage/gallery-7.html">Gallery</a></li>    
         </ul>
     </nav>
@@ -44,7 +44,7 @@
                 <caption><strong>Weather Summary</strong></caption>
                 <tr>
                     <td class="summary1">Currently:</td>
-                    <td class="summary2">Sunny</td>
+                    <td class="summary2"><span id="sky"></span</td>
                 </tr>
                 <tr>
                     <td class="summary1">Temperature:</td>
@@ -56,11 +56,11 @@
                 </tr>
                 <tr>
                     <td class="summary1">Humidity:</td>
-                    <td class="summary2">60%</td>
+                    <td class="summary2"><span id="Humidity"></td>
                 </tr>
                 <tr>
                     <td class="summary1">Wind Speed:</td>
-                    <td class="summary2"><span id="wind">8</span>MPH</td>
+                    <td class="summary2"><span id="wind"></span></td>
                 </tr>
             </table>
         </div>
@@ -76,18 +76,18 @@
         <table id="forecast">
             <caption id="fiveday">5 day forecast</caption>
             <tr>
-                <td class="days"><strong>Monday</strong></td>
-                <td class="days"><strong>Tuesday</strong></td>
-                <td class="days"><strong>Wednesday</strong></td>
-                <td class="days"><strong>Thursday</strong></td>
-                <td class="days"><strong>Friday</strong></td>
+                <td><span id="dayofweek1"></span></td>
+                <td><span id="dayofweek2"></span></td>
+                <td><span id="dayofweek3"></span></td>
+                <td><span id="dayofweek4"></span></td>
+                <td><span id="dayofweek5"></span></td>
             </tr>
             <tr>
-                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"><br>45&#8457;</td>
-                <td class="icons"><img src="Images/rainicon.png" alt="Rain Icon"><br>40&#8457;</td>
-                <td class="icons"><img src="Images/cloudicon.png" alt="Could Icon"><br>65&#8457;</td>
-                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"><br>70&#8457;</td>
-                <td class="icons"><img src="Images/sunicon.png" alt="Sun Icon"><br>80&#8457;</td>
+                <td class="icons"><img src="#" alt="#" id="weathericon1"><br><span id="forecast1"></span>&deg; F</td>
+                <td class="icons"><img src="#" alt="#" id="weathericon2"><br><span id="forecast2"></span>&deg; F</td>
+                <td class="icons"><img src="#" alt="#" id="weathericon3"><br><span id="forecast3"></span>&deg; F</td>
+                <td class="icons"><img src="#" alt="#" id="weathericon4"><br><span id="forecast4"></span>&deg; F</td>
+                <td class="icons"><img src="#" alt="#" id="weathericon5"><br><span id="forecast5"></span>&deg; F</td>
             </tr>
         </table>
     </section>
@@ -140,6 +140,7 @@
   <script src="JS/Preston_JS.js"></script>
   <script src="JS/windchill.js"></script>
   <script src="JS/weather.js"></script>
+  <script src="JS/fiveday.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
 WebFont.load({

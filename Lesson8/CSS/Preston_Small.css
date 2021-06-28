@@ -1,4 +1,25 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+    body {
+        width: 95%;
+        margin: 0 auto;
+    }
+    /*******gallery-7*******/
+    #weathermain {
+        margin: 0 auto; 
+    }
+    #weathergrid {
+        display: grid;
+        grid-template-rows: repeat(9, 1fr);
+        justify-content: center;
+        padding: 20px; 
+        margin: 0 auto;
+    }
+    /*******index*******/
+    .home-cards {
+        max-width: 400px;
+        grid-template-columns: 1fr;
+    }
+    /*****Preston-10*****/
     #forecast {
         display: none;
     }
@@ -16,7 +37,7 @@
         justify-content: center;
         background-color: #03045E;
         opacity: 70%;
-    }    
+    }
     #contactlist {
         list-style: none;
         font-size: 1.25rem;
@@ -27,41 +48,13 @@
         width: 25px;
         justify-content: center;
     }
-    #weathermain {
-        max-width: 1750px;
-        margin: 0 auto; 
-      }
-        #weathergrid {
-          display: grid;
-          grid-template-columns: minmax(160px, 1fr);
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(160px, 1fr);
-          align-items: center;
-          justify-content: center;
-          max-width: 95%;
-          margin: 0 auto;   
-      }
-      .weatherdiv {
-          width: 300px;
-          height: 400px;
-          overflow: hidden;
-          justify-content: center;
-      }
-
-  }
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 nav, h1, h2 {
     font-family: "Cormorant Garamond";
 }
-.banner {
-    background-color: #03045E;
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding-bottom: 1rem;
-  }
 header {
     display: flex;
     background-color: #03045E;
@@ -79,8 +72,6 @@ header .motto {
 header img {
     height: 60px;
 }
-/**/
-/** NAV **/
 nav {
     background-color: #03045E;
     opacity: 70%;
@@ -101,7 +92,7 @@ nav ul {
 }
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    }
+}
 nav ul li a {
     display: block;
     padding: .8rem 2%;
@@ -112,12 +103,93 @@ nav ul li a {
 nav ul.hide {
     display: none;
 }
-/**/
+footer {
+    background-color: #03045E;
+    padding: 5px;
+    text-align:center;
+    color: white;
+}
+footer a:visited {
+    color: white;
+}
+footer a {
+    color: white;
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 h2 {
     text-align: center;
     font-size: 2rem;
 }
-/** Weather Summary Table **/
+.field {
+    float: right;
+}
+/*******gallery-7*******/
+.weatherimg {
+    height: 350px;
+}
+.weatherdiv {
+    width: 300px;
+    height: 390px;
+    justify-content: center;
+    box-shadow:  5px 8px 10px black;
+    margin: 20px auto;
+}
+/*******Storm Center*******/
+form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+fieldset {
+    margin: 70px 0px;
+    border: solid 3px #00B4D8;
+}
+/*******index*******/
+.home-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.home-cards section {
+    background-color: #90E0EF;
+}
+.home-cards h2 {
+    color:#03045E;
+    font-size: 28px;
+}
+.home-cards img {
+    width: 100%;
+}
+.town-info div {
+    color: #0077B6;
+    font-size: 12px;
+}
+#preston-card {
+    order: 1;
+}
+#soda-card {
+    order: 2;
+}
+#fish-card {
+    order: 3;
+    }
+/*****Preston-10*****/
+.banner {
+    background-color: #03045E;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
 .weathersummary {
     position: absolute;
     background-color: #00B4D8;
@@ -140,8 +212,6 @@ table {
 caption {
     text-align: center;
 }
-/**/
-/**Forcast Table**/
 #fiveday {
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -170,8 +240,6 @@ caption {
 td img {
     height: 50px;
 }
-/**/
-
 .field {
     float: right;
 }
@@ -180,35 +248,6 @@ td img {
     padding: 5px;
     margin: 5px;
 }
-/**/
 #sunlarge, #sun, #sunmedium, #sunsmall {
     max-width: 100%;
-}
-footer {
-    background-color: #03045E;
-    padding: 5px;
-    text-align:center;
-    color: white;
-}
-footer a:visited {
-    color: white;
-}
-footer a {
-    color: white;
-}
-.active {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-form {
-    max-width: 900px;
-    margin: 0 auto;
-}
-fieldset {
-    margin: 70px 0px;
-    border: solid 3px #00B4D8;
 }

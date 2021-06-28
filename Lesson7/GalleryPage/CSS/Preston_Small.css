@@ -3,7 +3,7 @@
         width: 95%;
         margin: 0 auto;
     }
-    /**gallery-7**/
+    /*******gallery-7*******/
     #weathermain {
         margin: 0 auto; 
     }
@@ -13,6 +13,40 @@
         justify-content: center;
         padding: 20px; 
         margin: 0 auto;
+    }
+    /*******index*******/
+    .home-cards {
+        max-width: 400px;
+        grid-template-columns: 1fr;
+    }
+    /*****Preston-10*****/
+    #forecast {
+        display: none;
+    }
+    .map {
+        display: none;
+    }
+    #contact {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .contactholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #03045E;
+        opacity: 70%;
+    }
+    #contactlist {
+        list-style: none;
+        font-size: 1.25rem;
+        text-align: left;
+        color: white;
+    }
+    .social {
+        width: 25px;
+        justify-content: center;
     }
 }
 body {
@@ -91,14 +125,129 @@ footer a {
 }
 h2 {
     text-align: center;
+    font-size: 2rem;
 }
+.field {
+    float: right;
+}
+/*******gallery-7*******/
 .weatherimg {
     height: 350px;
-  }
-  .weatherdiv {
+}
+.weatherdiv {
     width: 300px;
     height: 390px;
     justify-content: center;
     box-shadow:  5px 8px 10px black;
     margin: 20px auto;
+}
+/*******Storm Center*******/
+form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+fieldset {
+    margin: 70px 0px;
+    border: solid 3px #00B4D8;
+}
+/*******index*******/
+.home-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.home-cards section {
+    background-color: #90E0EF;
+}
+.home-cards h2 {
+    color:#03045E;
+    font-size: 28px;
+}
+.home-cards img {
+    width: 100%;
+}
+.town-info div {
+    color: #0077B6;
+    font-size: 12px;
+}
+#preston-card {
+    order: 1;
+}
+#soda-card {
+    order: 2;
+}
+#fish-card {
+    order: 3;
+    }
+/*****Preston-10*****/
+.banner {
+    background-color: #03045E;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.weathersummary {
+    position: absolute;
+    background-color: #00B4D8;
+    opacity: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow:  5px 5px  8px black;
+}
+.summary1 {
+    text-align: right;
+}
+.summary2 {
+    text-align: left;
+}
+table {
+    padding: 5px;
+}
+caption {
+    text-align: center;
+}
+#fiveday {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+#forecast {
+    width: 800px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.days, .icons {
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+}
+.days {
+    font-size: 1.25rem;
+    background-color: #0077B6;
+}
+td img {
+    height: 50px;
+}
+.field {
+    float: right;
+}
+.Articleholder {
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+#sunlarge, #sun, #sunmedium, #sunsmall {
+    max-width: 100%;
 }

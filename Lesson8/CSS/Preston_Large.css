@@ -33,6 +33,24 @@
         align-content: center;
         justify-content: center;
     }
+    /*****gallery-7*****/
+    #weathermain {
+        max-width: 1750px;
+        margin: 0 auto; 
+    }
+    #weathergrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        padding: 20px;   
+    }
+    /*****index*****/
+    .home-cards {
+        max-width: 950px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /*****Preston-10*****/
     #fiveday {
         font-size: 2rem;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -87,27 +105,4 @@
         width: 25px;
         justify-content: center;
     }
-    #weathermain {
-        max-width: 1750px;
-        margin: 0 auto; 
-      }
-        #weathergrid {
-          display: grid;
-          grid-template-columns: 1fr 1fr minmax(160px, 1fr);
-          grid-template-rows: repeat(3, 1fr);
-          align-items: center;
-          justify-content: center;
-          max-width: 95%;
-          margin: 0 auto;   
-      }
-      .weatherdiv {
-          width: 300px;
-          height: 500px;
-          overflow: hidden;
-          box-shadow: 0px 0px 15px 5px gray;
-      }
-      .weatherimg {
-
-      }
-
 }
