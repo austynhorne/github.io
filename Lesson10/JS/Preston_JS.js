@@ -1,12 +1,13 @@
+/****** NAV ******/
 function toggleMenu(){
     console.log(document.getElementById("primaryNav").classList)
     document.getElementById("primaryNav").classList.toggle("hide")
-}
-let d = new Date();
-let Y = d.getFullYear();
-document.querySelector('#Year').textContent = Y;
-
+ }
+/*** Year ***/
 let date = new Date();
+let Y = date.getFullYear();
+document.querySelector('#Year').textContent = Y;
+/*** Last Edited ***/
 let day = new Array(7)
 day[0] = "Sunday";
 day[1] = "Monday";
@@ -29,6 +30,7 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 let FullDate = day[date.getDay()] + ", " + " " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear();
+/*** Banner ***/
 document.querySelector('#date').innerHTML = FullDate;
 if (date.getDay() === 5) {
     document.querySelector('.banner').style.display = 'block';

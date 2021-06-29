@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="CSS/Preston_Small.css">
+  <link rel="stylesheet" href="CSS/Preston_Medium.css">
   <link rel="stylesheet" href="CSS/Preston_Large.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Preston Page</title>
@@ -40,7 +41,7 @@
     </h2>
     <section class="holderweather">
         <div class="weathersummary">
-            <table>
+            <table class="weathertable">
                 <caption><strong>Weather Summary</strong></caption>
                 <tr>
                     <td class="summary1">Currently:</td>
@@ -64,12 +65,12 @@
                 </tr>
             </table>
         </div>
-            <picture>
-                <source media="(max-width: 300px)" srcset="Images/Sun300pxC.jpg" id="sunsmall">
-                <source media="(max-width: 600px)" srcset="Images/Sun600pxC.jpg" id="sunmedium">
-                <source media="(max-width: 2000px)" srcset="Images/Sun900pxC.jpg" id="sunlarge">
-                <img src="Images/Sun.jpg" id="sun">
-            </picture>
+        <picture>
+            <source media="(max-width: 500px)" srcset="Images\Sunset300.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Images\Sunset600.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Images\Sunset900.jpg" id="sunlarge">
+            <img src="Images/Sunset.jpg" id="sun">
+        </picture>
         </div>
     </section>
     <section class="forecastholder">
@@ -116,6 +117,7 @@
             placeat!
           </p>
     </section>
+</main>
     <section class="contactholder">
         <img src="Images/Map.PNG" alt="map" class="map">
             <div id="contact">
@@ -131,24 +133,25 @@
                 </ul>
             </div>
     </section>
-    </main>
     <footer>
+        <div id="Visit"></div>
         &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
         <p id="date"></p>
     </footer>
-  </body>
-  <script src="JS/Preston_JS.js"></script>
-  <script src="JS/windchill.js"></script>
-  <script src="JS/weather.js"></script>
-  <script src="JS/fiveday.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>
-WebFont.load({
-  google: {
-    families: [
-       'Cormorant Garamond'
-    ]
-  }
-});
-</script>
+    </body>
+    <script src="JS/Preston_JS.js"></script>
+    <script src="JS/windchill.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/lastvisit.js"></script>
+    <script src="JS/fiveday.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+          google: {
+            families: [
+               'Cormorant Garamond'
+            ]
+          }
+        });
+        </script>
 </html>

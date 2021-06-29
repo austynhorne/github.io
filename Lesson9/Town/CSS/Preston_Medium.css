@@ -38,5 +38,38 @@
   }
   .home-cards div {
     margin-bottom: 3rem;
-  }   
+  }
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .map {
+    width: 400px;
+    float: left;
+  }
+  #contact {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .contactholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03045E;
+    opacity: 70%;
+  }    
+  #contactlist {
+    list-style: none;
+    font-size: 1.25rem;
+    text-align: left;
+    color: white;
+  }
+  .social {
+    width: 25px;
+    justify-content: center;
+  }
+  .forecastholder {
+    max-width: 600px;
+  }
 }

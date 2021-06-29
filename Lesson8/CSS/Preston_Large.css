@@ -24,7 +24,7 @@
         align-content: center;
         justify-content: center;
     }
-    main, nav ul {
+    nav ul {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -34,7 +34,7 @@
         justify-content: center;
     }
     /*****gallery-7*****/
-    #weathermain {
+    #weathermain, .contactholder {
         max-width: 1750px;
         margin: 0 auto; 
     }

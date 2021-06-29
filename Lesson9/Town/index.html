@@ -30,9 +30,9 @@
     </nav>
     <main>
         <picture>
-            <source media="(max-width: 500px)" srcset="Images\Sunset500px.jpg" id="sunsmall">
-            <source media="(max-width: 600px)" srcset="Images\Sunset600px.jpg" id="sunmedium">
-            <source media="(max-width: 2000px)" srcset="Images\Sunset900px.jpg" id="sunlarge">
+            <source media="(max-width: 500px)" srcset="Images\Sunset300.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Images\Sunset600.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Images\Sunset900.jpg" id="sunlarge">
             <img src="Images/Sunset.jpg" id="sun">
         </picture>
         <div class="home-cards"></div>
@@ -41,6 +41,7 @@
             <source media="(max-width: 2000px)" srcset="Images\Footballfield250px.jpg">
             <img src="Images/Footballfield.jpg">
         </picture>
+        <section class="Articleholder">
         <h3>Article</h3>
         <h4>By: <em>John Doe</em></h4>
         <p>
@@ -59,6 +60,8 @@
             excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
             placeat!
           </p>
+        </section>
+        </main>
           <section class="contactholder">
             <img src="Images/Map.PNG" alt="map" class="map">
                 <div id="contact">
@@ -74,14 +77,23 @@
                     </ul>
                 </div>
         </section>
-    </main>
     <footer>
-        <footer>
-            <div id="Visit"></div>
-            &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
-            <p id="date"></p>
-        </footer>
+        <div id="Visit"></div>
+        &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
+        <p id="date"></p>
     </footer>
-<script src="JS/Towns.js"></script>
-</body>
+    </body>
+    <script src="JS/Preston_JS.js"></script>
+    <script src="JS/Towns.js"></script>
+    <script src="JS/lastvisit.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+          google: {
+            families: [
+               'Cormorant Garamond'
+            ]
+          }
+        });
+        </script>
 </html>

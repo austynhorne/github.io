@@ -3,10 +3,10 @@
         width: 95%;
         margin: 0 auto;
     }
-    nav button{
+    nav button {
         display: none;
     }
-    nav ul.hide{
+    nav ul.hide {
         display: block;
     }
     nav ul {
@@ -24,7 +24,7 @@
         align-content: center;
         justify-content: center;
     }
-    main, nav ul {
+    main, nav ul{
         max-width: 900px;
         margin: 0 auto;
     }
@@ -34,7 +34,7 @@
         justify-content: center;
     }
     /*****gallery-7*****/
-    #weathermain {
+    #weathermain, .contactholder {
         max-width: 1750px;
         margin: 0 auto; 
     }
