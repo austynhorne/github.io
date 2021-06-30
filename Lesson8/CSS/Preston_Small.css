@@ -20,10 +20,7 @@
         grid-template-columns: 1fr;
     }
     /*****Preston-10*****/
-    #forecast {
-        display: none;
-    }
-    .map {
+    #forecast, .map {
         display: none;
     }
     #contact {
@@ -48,6 +45,33 @@
         width: 25px;
         justify-content: center;
     }
+    .weathersummary {
+        background-color: #00B4D8;
+        opacity: 70%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #sunlarge, #sun, #sunmedium, #sunsmall {
+        display: none;
+    }
+    .weathersummary {
+        background-color: #00B4D8;
+        opacity: 70%;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      .summary1 {
+        text-align: right;
+      }
+      .summary2 {
+        text-align: left;
+      }
+      .weathertable {
+        margin: 0 auto;
+      }
+      caption {
+        text-align: center;
+      }
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -190,28 +214,6 @@ fieldset {
     font-weight: bold;
     padding-bottom: 1rem;
 }
-.weathersummary {
-    position: absolute;
-    background-color: #00B4D8;
-    opacity: 70%;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow:  5px 5px  8px black;
-}
-.summary1 {
-    text-align: right;
-}
-.summary2 {
-    text-align: left;
-}
-table {
-    padding: 5px;
-}
-caption {
-    text-align: center;
-}
 #fiveday {
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -239,9 +241,6 @@ caption {
 }
 td img {
     height: 50px;
-}
-.field {
-    float: right;
 }
 .Articleholder {
     border: 2px solid gray;
