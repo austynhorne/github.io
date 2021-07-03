@@ -7,7 +7,7 @@ fetch(eventURL)
     .then(function(jsonObject) {
         const towns = jsonObject["towns"]
         for (let i = 0; i < towns.length; i++) {
-            if (towns[i].name == "Soda Springs") {
+            if (towns[i].name == "Preston") {
                 const events = towns[i].events
                 for (var event in events) {
                     let section = document.querySelector(".events")

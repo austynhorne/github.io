@@ -77,11 +77,11 @@
         <table id="forecast">
             <caption id="fiveday">5 day forecast</caption>
             <tr>
-                <td><span id="dayofweek1"></span></td>
-                <td><span id="dayofweek2"></span></td>
-                <td><span id="dayofweek3"></span></td>
-                <td><span id="dayofweek4"></span></td>
-                <td><span id="dayofweek5"></span></td>
+                <td class="days"><strong><span id="dayofweek1"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek2"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek3"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek4"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek5"></span></strong></td>
             </tr>
             <tr>
                 <td class="icons"><img src="#" alt="#" id="weathericon1"><br><span id="forecast1"></span>&deg; F</td>
@@ -91,31 +91,18 @@
                 <td class="icons"><img src="#" alt="#" id="weathericon5"><br><span id="forecast5"></span>&deg; F</td>
             </tr>
         </table>
+        <div class="events">
+            <h3><em>Preston Events</em></h3>
+        </div>
     </section>
+    <h3 class="news">News<span class="provided">(Provided by Idaho News)</span></h3>
     <section class="Articleholder">
-        <picture class="field">
-            <source media="(max-width: 600px)" srcset="Images/Footballfield150px.jpg">
-            <source media="(max-width: 2000px)" srcset="Images/Footballfield250px.jpg">
-            <img src="Images/Footballfield.jpg">
-        </picture>
-        <h3>Article</h3>
-        <h4>By: <em>John Doe</em></h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-  
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-  
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-          </p>
+            <img src="Images/Football.jpg" class="football">
+        <div class="title">
+            <h4><a href="https://idahonews.com/sports/local-sports/boise-states-kellen-moore-added-to-2022-college-football-hall-of-fame-ballot" target="_blank">State's Kellen Moore added to 2022 College Football Hall of Fame ballot</a></h4>
+            <p class="author">by Ryan L Morrison</p>
+            <p>Kellen Moore, the winningest quarterback in the history of college football and former Boise State Bronco, has been added to the 2022 College Football Hall of Fame ballot.</p>
+        </div>
     </section>
 </main>
     <section class="contactholder">
@@ -144,6 +131,7 @@
     <script src="JS/weather.js"></script>
     <script src="JS/lastvisit.js"></script>
     <script src="JS/fiveday.js"></script>
+    <script src="JS/event.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
