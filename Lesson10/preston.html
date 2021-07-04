@@ -29,8 +29,8 @@
             <ul id="primaryNav" class="hide">
             <li><a href="../Lesson9/Town/index.html">Home</a></li>
             <li class="active"><a href="preston.html">Preston</a></li>
-            <li><a href="../Lesson11/Soda Springs/Soda-Springs.html">Soda Springs</a></li>
-            <li><a href="../Lesson11/Fish Haven/Fish-Haven.html">Fish Haven</a></li>
+            <li><a href="../Lesson11/Soda-Springs/Soda-Springs.html">Soda Springs</a></li>
+            <li><a href="../Lesson11/Fish-Haven/Fish-Haven.html">Fish Haven</a></li>
             <li><a href="../Lesson8/stormcenter.html">Storm Center</a></li>
             <li><a href="../Lesson7/GalleryPage/gallery.html">Gallery</a></li>    
         </ul>
@@ -45,7 +45,7 @@
                 <caption><strong>Weather Summary</strong></caption>
                 <tr>
                     <td class="summary1">Currently:</td>
-                    <td class="summary2"><span id="sky"></span</td>
+                    <td class="summary2"><span id="sky"></span></td>
                 </tr>
                 <tr>
                     <td class="summary1">Temperature:</td>
@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                     <td class="summary1">Humidity:</td>
-                    <td class="summary2"><span id="Humidity"></td>
+                    <td class="summary2"><span id="Humidity"></span></td>
                 </tr>
                 <tr>
                     <td class="summary1">Wind Speed:</td>
@@ -66,12 +66,11 @@
             </table>
         </div>
         <picture>
-            <source media="(max-width: 500px)" srcset="Images\Sunset300.jpg" id="sunsmall">
-            <source media="(max-width: 600px)" srcset="Images\Sunset600.jpg" id="sunmedium">
-            <source media="(max-width: 2000px)" srcset="Images\Sunset900.jpg" id="sunlarge">
-            <img src="Images/Sunset.jpg" id="sun">
+            <source media="(max-width: 500px)" srcset="Images/Sunset300.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Images/Sunset600.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Images/Sunset900.jpg" id="sunlarge">
+            <img src="Images/Sunset.jpg" id="sun" alt="sun">
         </picture>
-        </div>
     </section>
     <section class="forecastholder">
         <table id="forecast">
@@ -97,7 +96,7 @@
     </section>
     <h3 class="news">News<span class="provided">(Provided by Idaho News)</span></h3>
     <section class="Articleholder">
-            <img src="Images/Football.jpg" class="football">
+            <img src="Images/Football.jpg" class="football" alt="football">
         <div class="title">
             <h4><a href="https://idahonews.com/sports/local-sports/boise-states-kellen-moore-added-to-2022-college-football-hall-of-fame-ballot" target="_blank">State's Kellen Moore added to 2022 College Football Hall of Fame ballot</a></h4>
             <p class="author">by Ryan L Morrison</p>
@@ -125,7 +124,6 @@
         &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
         <p id="date"></p>
     </footer>
-    </body>
     <script src="JS/Preston_JS.js"></script>
     <script src="JS/windchill.js"></script>
     <script src="JS/weather.js"></script>
@@ -142,4 +140,5 @@
           }
         });
         </script>
+    </body>
 </html>

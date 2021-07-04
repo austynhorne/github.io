@@ -1,4 +1,4 @@
-const apiURLforecast="https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ab1af1b162d4021b8b58055befd97b83&units=imperial";
+const apiURLforecast="https://api.openweathermap.org/data/2.5/forecast?lat=42.3&lon=-111.39&appid=bdc18c3c83f3b30877e8028a22b7c78a&units=imperial";
     fetch(apiURLforecast) 
       .then((response) => response.json())
       .then((jsObject) => {
@@ -7,11 +7,10 @@ const apiURLforecast="https://api.openweathermap.org/data/2.5/forecast?id=560447
         let day = 0;
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-        //filter the json data to just one time a day
         const fiveDayForecast = jsObject.list.filter(forecast => forecast.dt_txt.includes('18:00:00'));
 
         console.log(fiveDayForecast);
-// loop through each day
+
         fiveDayForecast.forEach( x => {
             let d = new Date(x.dt_txt);
             console.log(d);

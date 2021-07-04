@@ -246,7 +246,34 @@ td img {
     border: 2px solid gray;
     padding: 5px;
     margin: 5px;
+    display: flex;
+}
+.football {
+    width: 200px;
+}
+
+.title {
+    display: block;
+    margin-left: 5px;
+}
+.author {
+    font-size: .75rem;
+    margin-top: -15px;
+}
+.news {
+    margin-bottom: -7px;
+}
+.provided {
+    font-size: .85rem;
 }
 #sunlarge, #sun, #sunmedium, #sunsmall {
     max-width: 100%;
+}
+.events {
+    border: 2px solid #03045E;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: .5px;
 }
