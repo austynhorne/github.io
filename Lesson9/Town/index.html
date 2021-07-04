@@ -2,11 +2,12 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="description" content="Austyn Course Portal for WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+  <meta name="description" content="Home Page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/Preston_Small.css">
   <link rel="stylesheet" href="CSS/Preston_Large.css">
   <link rel="stylesheet" href="CSS/Preston_Medium.css">
+  <title>Home Page</title>
 </head>
 <body>
     <header>
@@ -22,8 +23,8 @@
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="../../Lesson10/preston.html">Preston</a></li>
-            <li><a href="../../Lesson11/Soda Springs/Soda-Springs.html">Soda Springs</a></li>
-            <li><a href="../../Lesson11/Fish Haven/Fish-Haven.html">Fish Haven</a></li>
+            <li><a href="../../Lesson11/Soda-Springs/Soda-Springs.html">Soda Springs</a></li>
+            <li><a href="../../Lesson11/Fish-Haven/Fish-Haven.html">Fish Haven</a></li>
             <li><a href="../../Lesson8/stormcenter.html">Storm Center</a></li>
             <li><a href="../../Lesson7/GalleryPage/gallery.html">Gallery</a></li>    
         </ul>
@@ -33,37 +34,21 @@
             Rain Or Shine Weather Home Page
         </h2>
         <picture>
-            <source media="(max-width: 500px)" srcset="Images\Sunset300.jpg" id="sunsmall">
-            <source media="(max-width: 600px)" srcset="Images\Sunset600.jpg" id="sunmedium">
-            <source media="(max-width: 2000px)" srcset="Images\Sunset900.jpg" id="sunlarge">
-            <img src="Images/Sunset.jpg" id="sun">
+            <source media="(max-width: 500px)" srcset="Images/Sunset300.jpg" id="sunsmall">
+            <source media="(max-width: 600px)" srcset="Images/Sunset600.jpg" id="sunmedium">
+            <source media="(max-width: 2000px)" srcset="Images/Sunset900.jpg" id="sunlarge">
+            <img src="Images/Sunset.jpg" id="sun" alt="sun">
         </picture>
         <div class="home-cards"></div>
-        <section class="Articleholder">
-            <picture class="field">
-                <source media="(max-width: 600px)" srcset="Images\Footballfield150px.jpg">
-                <source media="(max-width: 2000px)" srcset="Images\Footballfield250px.jpg">
-                <img src="Images/Footballfield.jpg">
-            </picture>
-        <h3>Article</h3>
-        <h4>By: <em>John Doe</em></h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-  
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-  
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-            reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-            excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-            placeat!
-          </p>
-        </section>
+    <h3 class="news">News<span class="provided">(Provided by Idaho News)</span></h3>
+    <section class="Articleholder">
+            <img src="Images/Football.jpg" class="football" alt="football">
+        <div class="title">
+            <h4><a href="https://idahonews.com/sports/local-sports/boise-states-kellen-moore-added-to-2022-college-football-hall-of-fame-ballot" target="_blank">State's Kellen Moore added to 2022 College Football Hall of Fame ballot</a></h4>
+            <p class="author">by Ryan L Morrison</p>
+            <p>Kellen Moore, the winningest quarterback in the history of college football and former Boise State Bronco, has been added to the 2022 College Football Hall of Fame ballot.</p>
+        </div>
+    </section>
         </main>
           <section class="contactholder">
             <img src="Images/Map.PNG" alt="map" class="map">
@@ -85,7 +70,6 @@
         &copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne
         <p id="date"></p>
     </footer>
-    </body>
     <script src="JS/Preston_JS.js"></script>
     <script src="JS/Towns.js"></script>
     <script src="JS/lastvisit.js"></script>
@@ -99,4 +83,5 @@
           }
         });
         </script>
+    </body>
 </html>
