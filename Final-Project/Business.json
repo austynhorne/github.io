@@ -4,6 +4,36 @@
         "name": "C-A-L Ranch",
         "Address": "955 N 2000 W, Ogden, UT 84404",
         "Phone": "(801) 732-9348"
-      }
+      },
+      {
+        "name": "Ogden Nature Center",
+        "Address": "966 W 12th Street, Ogden Ut 84404",
+        "Phone": "(801) 621-7595"
+    },
+    {
+        "name": "Alaskan Inn and Spa",
+        "Address": "435 Ogden Canyon, Ogden Ut 84401",
+        "Phone": "(801) 621-8600"
+    },
+    {
+        "name": "Planet Fitness South Ogden",
+        "Address": "3945 S Washington Blvd, Ogden Ut 84403",
+        "Phone": "(801) 528-3597"
+    },
+    {
+        "name": "Ray Citte Inc",
+        "Address": "1677 W Riverdale Road, Roy UT 84067",
+        "Phone": "(801) 773-4951"
+    },
+    {
+        "name": "MedVet of Northern Utah",
+        "Address": "2465 N Main Street #12A, Sunset UT 84015",
+        "Phone": "(801) 776-8118"
+    },
+    {
+        "name": "Lee's Marketplace",
+        "Address": "2465 N Washington Blvd, North Ogden UT 84414",
+        "Phone": "(801) 782-7800"
+    }
     ]
 }
