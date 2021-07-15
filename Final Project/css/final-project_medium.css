@@ -1,0 +1,18 @@
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    nav button.navbutton {
+        display: none;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px;
+        padding: 1px 1px;
+    }
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Ogden Weber Chamber of Commerce Home Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ogden Weber Chamber of Commerce Home Page</title>
+  <link rel="stylesheet" href="CSS/final-project_small.css">
+  <link rel="stylesheet" href="CSS/final-project_medium.css">
+</head>
+<body>
+<header>
+    <nav class="clearfix">
+        <button class="navbutton" onclick="toggleMenu()">&#9776; Menu</button>
+        <button class="weather" onclick="toggleweather()"><span id="temp"></span>&#8457;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li><a href="City.html">City</a></li>
+            <li><a href="Join.html">Join</a></li>
+            <li><a href="Directory.htlm">Directory</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div>
+              <table id="weathertable" class="hide">
+                  <tr>
+                      <td class="summary1">Currently:</td>
+                      <td class="summary2"><span id="sky"></span></td>
+                  </tr>
+                  <tr>
+                      <td class="summary1">Humidity:</td>
+                      <td class="summary2"><span id="Humidity"></span></td>
+                  </tr>
+              </table>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="image/HeroImage1_1500.jpg" style="width:100%">
+          <div class="text">Upcoming Events<br>July 20th-24th: Ogden Pioneer Days
+        <a id="pioneer" href="https://www.ogdenpioneerdays.com/" target="_blank">Click Here For Details</a></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="image/HeroImage2_1500.jpg" style="width:100%">
+          <div class="text"><a id="Join" href="Join.html">Join Now!<br></a>Join now and get 10% off your first payment</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      <div class="about">
+        <h2>
+          About The Ogden-Weber Chamber of Commerce
+        </h2>
+        <p>
+          Founded in 1887, the Ogden-Weber Chamber of Commerce is a nonprofit organization
+           dedicated to advancing business and community prosperity in northern Utah. 
+           Based in Ogden, the Chamber represents 700+ organizations in 15 cities and several 
+           unincorporated areas in Weber County.
+        </p>
+      </div>
+      <div>
+        <span class="name"></span>
+        <span class="Address"></span>
+      </div>
+    <section id="Contact">
+
+    </section>
+</main>
+<footer>
+    <div>&copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne</div>
+</footer>
+<script src="JS/Final-Project.js"></script>
+<script src="JS/HeroImage.js"></script>
+<script src="JS/weather.js"></script>
+<script src="js/Business.js"></script>
+</body>
+</html>
