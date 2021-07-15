@@ -1,7 +1,7 @@
-fetch('Business.json')
+fetch('https://austynhorne.github.io/github.io/Final-Project/Business.json')
 .then((response) => response.json())
 .then((jsObject) => {
   console.log(jsObject);
-  document.getElementById('name').textContent = jsObject.business.businessID_1.name;
-  document.getElementById('Address').textContent = jsObject.business.businessID_1.Address;
+  document.createElement('name').textContent = jsObject.business[0].businessID_1.name;
+  document.createElement('Address').textContent = jsObject.business[0].businessID_1.Address;
 });
