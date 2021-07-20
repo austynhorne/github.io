@@ -3,7 +3,7 @@ function toggleweather(){
     document.getElementById("weathertable").classList.toggle("hide")
 }
 
-const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=41.2&lon=-111.9&exclude={part}&appid=bdc18c3c83f3b30877e8028a22b7c78a&units=imperial";
+const weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=41.22276&lon=-111.97042&exclude={part}&appid=bdc18c3c83f3b30877e8028a22b7c78a&units=imperial";
 fetch(weatherURL)                                                                    
   .then((response) => response.json())
   .then((jsObject) => {

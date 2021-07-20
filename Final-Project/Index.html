@@ -7,17 +7,22 @@
   <title>Ogden Weber Chamber of Commerce Home Page</title>
   <link rel="stylesheet" href="CSS/final-project_small.css">
   <link rel="stylesheet" href="CSS/final-project_medium.css">
+  <link rel="stylesheet" href="CSS/final-project_large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
+  <img src="image/OgdenWeberlogo_stack.png" alt="logo" class="logo">
     <nav class="clearfix">
-        <button class="navbutton" onclick="toggleMenu()">&#9776; Menu</button>
+        <button class="navbutton" onclick="toggleMenu()">&#9776;</button> <img src="image/OgdenWeberlogo.png" alt="logo" class="logomenu">
         <button class="weather" onclick="toggleweather()"><span id="temp"></span>&#8457;</button>
         <ul id="primaryNav" class="hide">
             <li class="active"><a href="Index.html">Home</a></li>
             <li><a href="City.html">City</a></li>
             <li><a href="Join.html">Join</a></li>
-            <li><a href="Directory.htlm">Directory</a></li>
+            <li><a href="Directory.html">Directory</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
         <div>
@@ -37,12 +42,12 @@
 <main>
     <div class="slideshow-container">
         <div class="mySlides fade">
-          <img src="image/HeroImage1_1500.jpg" style="width:100%">
+          <img src="image/HeroImage1_1500.jpg" style="width:100%" alt="HeroImage1">
           <div class="text">Upcoming Events<br>July 20th-24th: Ogden Pioneer Days
         <a id="pioneer" href="https://www.ogdenpioneerdays.com/" target="_blank">Click Here For Details</a></div>
         </div>
         <div class="mySlides fade">
-          <img src="image/HeroImage2_1500.jpg" style="width:100%">
+          <img src="image/HeroImage2_1500.jpg" style="width:100%" alt="HeroImage2">
           <div class="text"><a id="Join" href="Join.html">Join Now!<br></a>Join now and get 10% off your first payment</div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -59,16 +64,55 @@
            unincorporated areas in Weber County.
         </p>
       </div>
-      <div>
-        <p><span id="name"></span></p>
-        <p><span id="Address"></span></p>
-      </div>
+      <h2>Business Spotlight</h2>
+      <section id="Business">
+        <div>
+          <p class="header"><span id="name1"></span></p>
+          <p><span id="Address1"></span></p>
+          <p><span id="phone1"></span></p>
+        </div>
+        <div>
+          <p class="header"><span id="name2"></span></p>
+          <p ><span id="Address2"></span></p>
+          <p><span id="phone2"></span></p>
+        </div>
+        <div>
+          <p class="header"><span id="name3"></span></p>
+          <p><span id="Address3"></span></p>
+          <p><span id="phone3"></span></p>
+        </div>
+      </section>
     <section id="Contact">
-
+      <div class="contact">
+        <h3>
+          Contact Us
+        </h3>
+        <div class="line"></div>
+        <p>
+          Address: 2380 Washington Blvd., Suite 290 Ogden, UT 84401        
+        </p>
+        <p>
+          Phone: 801.621.8300
+        </p>
+        <p>
+          Email: OWChamberofCommercer@gmail.com
+        </p>
+      </div>
+      <div class="follow">
+        <h3>
+          Follow Us
+        </h3>
+        <div class="line"></div>
+        <div id="social">
+          <img src="image/iconfinder_facebook.png" alt="facebook">
+          <img src="image/iconfinder_Instagram.png" alt="facebook">
+          <img src="image/iconfinder_twitter.png" alt="facebook">
+        </div>
+      </div>
     </section>
 </main>
 <footer>
-    <div>&copy; <span id="Year"></span> Rain Or Shine Weather | Austyn Horne</div>
+    <div>&copy; <span id="Year"></span> Ogden Weber Chamber of Commerce | Austyn Horne | WDD 230-8</div>
 </footer>
 <script src="JS/Final-Project.js"></script>
 <script src="JS/HeroImage.js"></script>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Ogden Weber Chamber of Commerce Contact Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ogden Weber Chamber of Commerce Contact Page</title>
+  <link rel="stylesheet" href="CSS/final-project_small.css">
+  <link rel="stylesheet" href="CSS/final-project_medium.css">
+  <link rel="stylesheet" href="CSS/final-project_large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <img src="image/OgdenWeberlogo_stack.png" alt="logo" class="logo">
+  <nav class="clearfix">
+    <button class="navbutton" onclick="toggleMenu()">&#9776;</button> <img src="image/OgdenWeberlogo.png" alt="logo" class="logomenu">
+    <ul id="primaryNav" class="hide">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="City.html">City</a></li>
+      <li class="active"><a href="Join.html">Join</a></li>
+      <li><a href="Directory.html">Directory</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h2>
+    Join
+  </h2>
+  <form>
+    <fieldset>
+      <legend><strong>Personal Information</strong></legend>
+      <label for="Fname">First Name:</label><br>
+      <input type="text" id="Fname" name="Fname" pattern="[A-Za-z\s.'-]{5,}" required><br>
+      <label for="Lname">Last Name:<br><input type="text" id="Lname" name="Lname" pattern="[A-Za-z\s.'-]{5,}" required></label><br>
+      <label for="email">Email:<br><input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required></label><br>
+      <label for="phone">Phone number:<br><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label><br>
+    </fieldset>
+    <fieldset>
+      <legend><strong>Business Information</strong></legend>
+      <label for="title">Title<br><input type="text" id="title" name="title"></label><br>
+      <label for="bname">Business Name<br><input type="text" id="bname" name="bname" required></label><br>
+      <label for="website">Business Website<br><input type="text" id="website" name="website"></label><br>
+      <label for="description">Business Description</label><br>
+      <textarea id="description" name="description"></textarea>
+    </fieldset>
+    <fieldset id="address">
+      <legend><strong>Address</strong></legend>
+      <input type="text" id="address1" class="address" name="title" placeholder="Street Address" required>
+      <input type="text" id="address2" class="address" name="title" placeholder="Suite Number"><br>
+      <input type="text" id="address3" class="address" name="title" placeholder="City" required>
+      <input type="text" id="address4" class="address" name="title" placeholder="Zip Code" required>
+      <input type="text" id="address5" class="address" name="title" placeholder="State" required>
+    </fieldset>
+    <fieldset id="joingrid">
+      <legend><strong>Choose Your Membership Level</strong></legend>
+      <div>
+        <label for="membership1">Non-Profit ($100)</label>
+        <input type="radio" id="membership1" class="membership" name="membership" value="Non-Profit">
+        <p class="perks">Get help with marketing your business</p>
+      </div>
+          <div class="line"></div>
+      <div>
+        <label for="membership2">Bronze ($200)</label>
+        <input type="radio" id="membership2" class="membership" name="membership" value="Bronze">
+        <p class="perks">Get help with marketing your business</p>
+        <p class="perks">Get Your business listed on business highlight once a year</p>
+      </div>
+      <div class="line"></div>
+      <div>
+        <label for="membership3">Silver ($400)</label>
+        <input type="radio" id="membership3" class="membership" name="membership" value="Silver">
+        <p class="perks">Get help with marketing your business</p>
+        <p class="perks">Get Your business listed on business highlight twice a year</p>
+        <p class="perks">Get a top to bottom business trianing</p>
+      </div>
+      <div class="line"></div>
+      <div>
+        <label for="membership4">Gold ($1000)</label>
+        <input type="radio" id="membership4" class="membership" name="membership" value="Gold">
+        <p class="perks">Get help with marketing your business</p>
+        <p class="perks">Get Your business listed on business highlight three times a year</p>
+        <p class="perks">Get a top to bottom business trianing</p>
+        <p class="perks">Get a shout out on our social media accounts</p>
+      </div>
+    </fieldset>
+  </form>
+<section id="Contact">
+  <div class="contact">
+    <h3>
+      Contact Us
+    </h3>
+    <div class="line"></div>
+    <p>
+      Address: 2380 Washington Blvd., Suite 290 Ogden, UT 84401        
+    </p>
+    <p>
+      Phone: 801.621.8300
+    </p>
+    <p>
+      Email: OWChamberofCommercer@gmail.com
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12003.75144242981!2d-111.97873416426646!3d41.2231246079008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530edf1a15e05d%3A0xbe9a76083e682fd5!2sOgden-Weber%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1626478026059!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="follow">
+    <h3>
+      Follow Us
+    </h3>
+    <div class="line"></div>
+    <div id="social">
+      <img src="image/iconfinder_facebook.png" alt="facebook">
+      <img src="image/iconfinder_Instagram.png" alt="facebook">
+      <img src="image/iconfinder_twitter.png" alt="facebook">
+    </div>
+  </div>
+  </section>
+</main>
+<footer>
+<div>&copy; <span id="Year"></span> Ogden Weber Chamber of Commerce | Austyn Horne | WDD 230-8</div>
+</footer>
+<script src="JS/Final-Project.js"></script>
+</body>
+</html>
