@@ -209,11 +209,11 @@ h3 {
     padding: 0 5px;
     margin-top: 5px;
 }
-nav, h1, h2, h3, .header, .name, legend{
-    font-family: 'Playfair Display', serif;
-}
 body {
     font-family: 'Montserrat', sans-serif;
+}
+nav, h1, h2, h3, .header, .name, legend{
+    font-family: 'Playfair Display', serif;
 }
 .directory {
     margin: 10px;
@@ -268,4 +268,9 @@ legend {
 }
 #demographic td {
     width: 50%;
+}
+.website {
+    color: black;
+    text-decoration: none;
+    width: 100%;
 }
