@@ -79,8 +79,9 @@ header {
 }
 #weathertable {
     color: white;
-    margin-right: 0;
-    float: right;
+    margin-right: 2px;
+    width: 60%;
+    max-width: 300px;
 }
 nav {
     width: 100%;
@@ -232,6 +233,8 @@ input, textarea {
 fieldset {
     width: 70%;
     border: solid 1px #D80032;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 legend {
     margin-left: 0;

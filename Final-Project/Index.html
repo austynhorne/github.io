@@ -25,18 +25,26 @@
             <li><a href="Directory.html">Directory</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
-        <div>
-              <table id="weathertable" class="hide">
-                  <tr>
-                      <td class="summary1">Currently:</td>
-                      <td class="summary2"><span id="sky"></span></td>
-                  </tr>
-                  <tr>
-                      <td class="summary1">Humidity:</td>
-                      <td class="summary2"><span id="Humidity"></span></td>
-                  </tr>
-              </table>
-        </div>
+            <table id="weathertable" class="hide">
+              <tr>
+                <td class="summary1">Currently:</td>
+                <td class="summary2"><span id="sky"></span></td>
+              </tr>
+              <tr>
+                <td class="summary1">Humidity:</td>
+                <td class="summary2"><span id="Humidity"></span></td>
+              </tr>
+              <tr>
+                <td class="days"><strong><span id="dayofweek1"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek2"></span></strong></td>
+                <td class="days"><strong><span id="dayofweek3"></span></strong></td>
+              </tr>
+              <tr>
+                <td class="days"><span id="forecast1"></span>&deg; F</td>
+                <td class="days"><span id="forecast2"></span>&deg; F</td>
+                <td class="days"><span id="forecast3"></span>&deg; F</td>
+              </tr>
+            </table>
     </nav>
 </header>
 <main>
@@ -124,5 +132,6 @@
 <script src="js/HeroImage.js"></script>
 <script src="js/weather.js"></script>
 <script src="js/Business.js"></script>
+<script src="js/threeday.js"></script>
 </body>
 </html>
